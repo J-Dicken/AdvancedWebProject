@@ -1,0 +1,246 @@
+:root{
+	--blue: #1d4289;
+	--white: #FFF;
+}
+
+*{
+	border: none;
+	margin: 0;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: var(--white);
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+body{
+	color: var(--blue);
+}
+
+#header{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: solid 1px #000;
+	background-color: var(--blue);
+	color: var(--white);
+}
+
+#prodList{
+	width: min( 1536px, 90%);
+	margin: auto;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#prodFilter{
+	width: 100%;
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	border-radius: 5px;
+	margin-top: 5px;
+	flex-wrap: wrap;
+}
+
+#department, #brand{
+	width: 30%;
+	height: 2.5em;
+	font-size: 14px;
+	color: var(--blue);
+	border: 2px solid var(--blue);
+	cursor: pointer;
+}
+
+#products{
+	width: 90%;
+	margin: auto;
+	margin-top: 20px;
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.product{
+	cursor: pointer;
+	max-width: 200px;
+	padding: 5px;
+}
+
+.product img{
+	width: 100%;
+	max-height: 200px;
+}
+
+.product h2{
+	font-size: 14px;
+}
+
+#productInfo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: min(900px, 90%);
+	height: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--white);
+	color: var(--blue);
+	display: flex;
+	gap: 5px;
+	border: 2px solid lightgrey;
+	padding: 10px;
+}
+
+#productInfo img{
+	max-width: 50%;
+	max-height: 100%;
+}
+
+#productText{
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+}
+
+#orderBtn{
+	background-color: var(--blue);
+	border-radius: 15px;
+	width: 100px;
+	padding: 10px;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	cursor: pointer;
+	color: var(--white);
+}
+
+#closeBtn{
+	font-size: 32px;
+	cursor: pointer;
+}
+
+#formContainer{
+	width: min(20rem, 90%);
+	margin:auto;
+}
+
+#form {
+	display: flex;
+	justify-content: center;
+	background-color: var(--blue);
+	color: var(--white);
+	align-items: center;	
+	margin: auto;
+	flex-direction: column;
+	margin-top: 30px;
+	border-radius: 5px;
+	text-align: center;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	position: relative;
+	z-index: 0;
+}
+
+#form label {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-bottom: 5px;
+}
+
+#form label input {
+	font-size:1.2rem;
+	height: 1.5rem;
+	text-align: center;
+	width: max(90%, 200px);
+	margin: auto;
+}
+
+input:focus {
+	outline:none;
+}
+
+#form span {
+	display: inline-flex;
+	align-items: center;
+	color: red;
+}
+
+#subBtn {
+	background-color: var(--white);
+	border-color: #FFFFFF;
+	color: var(--blue);
+	width: 100px;
+	cursor: pointer;
+	font-size: 14px;
+	padding: 5px 0px;
+	margin: 5px 0px;
+}
+
+#subBtn:hover {
+	background-color: #DBFEFF;
+	color: #000000;
+	box-shadow: 0px 0px 10px;
+}
+
+#form a{
+	color: var(--white);
+	cursor: pointer;
+}
+
+#form a:hover{
+	text-decoration: underline;
+}
+
+#form .valid {
+	border: 2px solid green;
+}
+
+#form .invalid{
+	border: 2px solid red;
+}
+
+.responseBox{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 80%;
+	height: 100px;
+	border: 2px solid lightgrey;
+	transform: translate(-50%, -50%);
+	background-color: var(--blue);
+	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	z-index: 2;
+}
+
+.responseBox p{
+	cursor: pointer;
+	font-size: 14px;
+}
+
+#ordersWrapper{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+#ordersWrapper table{
+	width: 90%;
+	margin: auto;
+}
+
